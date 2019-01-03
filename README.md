@@ -1,4 +1,4 @@
-[Fastify](https://www.npmjs.com/package/fastify)'s application generator
+# [Fastify](https://www.npmjs.com/package/fastify)'s application generator
 
 [![NPM](https://img.shields.io/npm/v/fastify-generate.svg)](https://www.npmjs.com/package/fastify-generate)
 [![Build](https://travis-ci.org/arniu/fastify-generate.svg)](https://travis-ci.org/arniu/fastify-generate)
@@ -17,19 +17,19 @@ The quickest way to get started with fastify is to utilize the executable `fasti
 
 Create the app:
 
-```bash
+```sh
 $ fastify path/to/app && cd path/to/app
 ```
 
 Install dependencies:
 
-```bash
+```sh
 $ npm install
 ```
 
 Start your fastify app at `http://localhost:3030/`:
 
-```bash
+```sh
 $ npm start
 ```
 
@@ -37,15 +37,21 @@ $ npm start
 
 1. Create a fastify app:
 
-   fastify path/to/app
+```sh
+fastify path/to/app
+```
 
 2. Create a fastify plugin:
 
-   fastify -P path/to/plugin
+```sh
+fastify -P path/to/plugin
+```
 
 3. Add more option for creating the app:
 
-   fastify -F v1.0 -p 3030 path/to/app
+```sh
+fastify -F v1.0 -p 3030 path/to/app
+```
 
 ## Command Line Options
 

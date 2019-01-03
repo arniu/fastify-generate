@@ -1,4 +1,7 @@
-# **packageName**
+# __packageName__
+
+[![Standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
 Short description of your awesome plugin.
 
