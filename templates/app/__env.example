@@ -1,0 +1,7 @@
+# Copy it to .env please!
+
+## app
+PORT=__port__
+HOST=localhost
+
+## Others
