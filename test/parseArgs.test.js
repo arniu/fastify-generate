@@ -2,7 +2,9 @@ const t = require('tap')
 
 const parseArgs = require('../lib/parseArgs')
 
-t.test('parse arguments', async t => {
+t.test('parse arguments', t => {
+  t.plan(18)
+
   // parse alias
   t.match(parseArgs('-h'), { help: true })
   t.match(parseArgs('--help'), { help: true })
