@@ -8,7 +8,7 @@
 ## Installation
 
 ```sh
-$ npm install -g fastify-generate
+npm install -g fastify-generate
 ```
 
 ## Quick Start
@@ -18,19 +18,19 @@ The quickest way to get started with fastify is to utilize the executable `fasti
 Create the app:
 
 ```sh
-$ fastify path/to/app && cd path/to/app
+fastify path/to/app && cd path/to/app
 ```
 
 Install dependencies:
 
 ```sh
-$ npm install
+npm install
 ```
 
-Start your fastify app at `http://localhost:3030/`:
+Start the app at `http://localhost:3030/`:
 
 ```sh
-$ npm start
+npm start
 ```
 
 ## Examples

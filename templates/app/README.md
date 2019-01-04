@@ -5,55 +5,23 @@
 
 Short description of your awesome app.
 
-## Install
+## Developing
 
-```
-npm install __packageName__ --save
-yarn add __packageName__
-```
+When developing, reload automatically:
 
-## Example
-
-```js
-const fastify = require('fastify')()
-fastify.register(require('__packageName__'))
-fastify.listen(3000)
+```sh
+npm install
+npm run dev
 ```
 
-You can also start any Fastify plugin with the [Fastify-cli](https://github.com/fastify/fastify-cli):
+Under the hood, [nodemon](https://www.npmjs.com/package/nodemon) is watching
+and will restart the app when any file changed.
 
+## Start
+
+Install dependencies and start the app:
+
+```sh
+npm install
+npm start
 ```
-fastify start __pluginFileName__
-```
-
-## Plugin
-
-### Accessibility
-
-<!-- Is your plugin fully encapsulated? If you use fastify-plugin or the hidden property 'skip-override' it's not -->
-
-**accessibilityTemplate**
-
-### Decorators
-
-<!-- A list of all exposed decorators in your plugin -->
-
-#### Fastify
-
-<!-- Please define the method signature in typescript because it's well known and easy to write -->
-
-**fastifyDecorators**
-
-#### Reply
-
-<!-- Please define the method signature in typescript because it's well known and easy to write -->
-
-**replyDecorators**
-
-## Dependencies
-
-**pluginDeps**
-
-## Compatible Fastify version
-
-**minFastify**
