@@ -21,12 +21,6 @@ app.register(require('__packageName__'))
 app.listen(3030)
 ```
 
-You can also start the plugin with the [Fastify-cli](https://github.com/fastify/fastify-cli):
-
-```
-fastify start __pluginFileName__
-```
-
 ## Plugin
 
 ### Accessibility
