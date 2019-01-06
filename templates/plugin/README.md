@@ -46,3 +46,9 @@ Is your plugin fully encapsulated? If you use `fastify-plugin` or the hidden pro
 ## Compatible Fastify version
 
 **minFastify**
+
+## Why not `async/await`?
+
+According to [Node Green](https://node.green/), async function is avaiable on
+Node >= v7.10.1. And fastify supports Node >= 6, we'd better use callbacks to
+cover more useage scenario.

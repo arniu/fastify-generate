@@ -13,13 +13,3 @@ t.test('The Plugin works', t => {
     t.pass()
   })
 })
-
-// If you prefer async/await, use the following
-//
-t.test('The Plugin works', async t => {
-  const app = build.app(t)
-
-  await app.ready()
-
-  t.pass()
-})

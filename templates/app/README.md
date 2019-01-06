@@ -25,3 +25,8 @@ Install dependencies and start the app:
 npm install
 npm start
 ```
+
+## `async/await` or callback?
+
+According to [Node Green](https://node.green/), async function is avaiable on
+Node >= v7.10.1. If your app will run on node v6, DO NOT use async/await.

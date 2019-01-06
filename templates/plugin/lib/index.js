@@ -10,9 +10,3 @@ module.exports = fp(function (fastify, opts, next) {
 
   next()
 })
-
-// If you prefer async/await, use the following
-//
-// module.exports = fp(async function (fastify, opts) {
-//   // Add code here
-// })
