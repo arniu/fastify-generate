@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = function (fastify, opts, next) {
-  fastify.get('/example', function (request, reply) {
+  fastify.get('/', function (request, reply) {
     reply.send('this is an example')
   })
 
@@ -15,3 +15,13 @@ module.exports = function (fastify, opts, next) {
 //     return 'this is an example'
 //   })
 // }
+
+// Used by `fastify-autoload`
+//
+// Exposed all routes under `/example`
+module.exports.autoPrefix = '/example'
+
+// Used by `fastify-autoload`
+//
+// Override `prefix` passed by fastify
+// module.exports.prefixOverride = '/example'
