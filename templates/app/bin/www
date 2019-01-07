@@ -1,16 +1,18 @@
 #! /usr/bin/env node
 
+'use strict'
+
 const config = require('../config')
 
 const app = require('fastify')(config.options)
 
-app.register(require('../index'))
+app.register(require('..'))
 app.listen(config.port, err => {
   if (err) shutdown(err)
 })
 
 /**
- * Shutdown server
+ * Shutdown gracefully
  *
  * @param {(string|Error)} [message]
  */
