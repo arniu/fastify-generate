@@ -1,9 +1,11 @@
-# [Fastify](https://www.npmjs.com/package/fastify)'s application generator
+# [Fastify](https://www.npmjs.com/package/fastify) Generate
 
 [![NPM](https://img.shields.io/npm/v/fastify-generate.svg)](https://www.npmjs.com/package/fastify-generate)
 [![Build](https://travis-ci.org/arniu/fastify-generate.svg)](https://travis-ci.org/arniu/fastify-generate)
 [![Standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
+
+One command to generate a fastify application or plugin.
 
 ## Installation
 

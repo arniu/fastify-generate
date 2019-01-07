@@ -1,8 +1,8 @@
 {
   "name": "fastify-generate",
-  "description": "Fastify' application generator",
-  "version": "0.0.6",
+  "description": "One command to generate a fastify application or plugin",
   "preferGlobal": true,
+  "version": "0.0.6",
   "main": "bin/cli.js",
   "bin": {
     "fastify": "bin/cli.js"
