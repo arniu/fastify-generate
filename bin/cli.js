@@ -1,5 +1,7 @@
 #! /usr/bin/env node
 
+'use strict'
+
 const help = require('../lib/help')
 const version = require('../lib/version')
 const generate = require('../lib/generate')

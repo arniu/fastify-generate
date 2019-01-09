@@ -1,5 +1,3 @@
-'use strict'
-
 require('dotenv').load({
   path: process.env.ENV_FILE || '.env'
 })
