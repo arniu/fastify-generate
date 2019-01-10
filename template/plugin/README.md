@@ -45,7 +45,7 @@ Is your plugin fully encapsulated? If you use `fastify-plugin` or the hidden pro
 
 ## Compatible Fastify version
 
-**minFastify**
+fastify: __fastify__
 
 ## Why not `async/await`?
 
