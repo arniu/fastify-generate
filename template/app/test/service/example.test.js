@@ -1,7 +1,7 @@
 const t = require('tap')
 const build = require('../build')
 
-t.test('default root route', t => {
+t.test('Get /example', t => {
   t.plan(2)
 
   const app = build.app(t)
@@ -19,7 +19,7 @@ t.test('default root route', t => {
 
 // If you prefer async/await, use the following
 //
-// t.test('default root route', async t => {
+// t.test('Get /example', async t => {
 //   const app = build.app(t)
 //
 //   const res = await app.inject({

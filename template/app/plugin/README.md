@@ -1,4 +1,4 @@
-# Plugin Folder
+# Plugin
 
 Plugins define behavior that is common to all the routes in your
 application. Authentication, caching, templates, and all the other cross

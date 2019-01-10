@@ -1,4 +1,4 @@
-# Service Folder
+# Service
 
 Services define routes within your application. Fastify provides an
 easy path to a microservice architecture, in the future you might want
