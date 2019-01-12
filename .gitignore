@@ -176,5 +176,5 @@ $RECYCLE.BIN/
 *code-workspace
 
 # lock files
-# package-lock.json
+package-lock.json
 yarn.lock
