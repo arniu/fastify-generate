@@ -27,7 +27,7 @@
   "scripts": {
     "lint": "standard --fix",
     "prelint": "prettier --write './**/*.{js,md}'",
-    "test": "tap {test,template}/**/*.test.js"
+    "test": "tap '{test,template}/**/*.test.js'"
   },
   "husky": {
     "hooks": {

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node bin/www",
-    "test": "tap test/**/*.test.js",
+    "test": "tap 'test/**/*.test.js'",
     "prelint": "prettier --write './**/*.{js,md,yml}'",
     "lint": "standard --fix",
     "dev": "nodemon bin/www"
