@@ -7,12 +7,6 @@
   "bin": {
     "fastify": "bin/cli.js"
   },
-  "files": [
-    "bin/",
-    "lib/",
-    "template/",
-    "LICENSE"
-  ],
   "author": "Arniu Tseng",
   "repository": "arniu/fastify-generate",
   "license": "MIT",
