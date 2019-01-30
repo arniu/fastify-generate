@@ -3,9 +3,10 @@
 [![NPM](https://img.shields.io/npm/v/fastify-generate.svg)](https://www.npmjs.com/package/fastify-generate)
 [![Build](https://travis-ci.org/arniu/fastify-generate.svg)](https://travis-ci.org/arniu/fastify-generate)
 [![Standard](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/) [![Greenkeeper badge](https://badges.greenkeeper.io/arniu/fastify-generate.svg)](https://greenkeeper.io/)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
+[![Greenkeeper](https://badges.greenkeeper.io/arniu/fastify-generate.svg)](https://greenkeeper.io/)
 
-One command to generate a fastify application or plugin.
+Generate fastify applications fastly
 
 ## Installation
 
