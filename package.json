@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "decamelize": "^2.0.0",
+    "decamelize": "^3.0.0",
     "generify": "^3.0.2",
     "yargs-parser": "^12.0.0"
   },
