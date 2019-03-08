@@ -47,18 +47,18 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "decamelize": "^3.0.0",
-    "generify": "^3.0.2",
-    "yargs-parser": "^12.0.0"
+    "generify": "^3.0.3",
+    "yargs-parser": "^13.0.0"
   },
   "devDependencies": {
-    "fastify": "^1.13.4",
+    "fastify": "^2.0.1",
     "fastify-autoload": "^0.6.0",
-    "fastify-plugin": "^1.4.0",
+    "fastify-plugin": "^1.5.0",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.16.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
     "standard": "^12.0.1",
-    "tap": "^12.4.0"
+    "tap": "^12.6.0"
   },
   "engines": {
     "node": ">= 6"
