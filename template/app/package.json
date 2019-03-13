@@ -37,7 +37,7 @@
     "tabWidth": 2
   },
   "dependencies": {
-    "dotenv": "^6.2.0",
+    "dotenv": "^7.0.0",
     "fastify": "__fastify__",
     "fastify-autoload": "^0.6.0",
     "fastify-plugin": "^1.4.0"
