@@ -39,7 +39,7 @@
   "dependencies": {
     "dotenv": "^7.0.0",
     "fastify": "__fastify__",
-    "fastify-autoload": "^0.6.0",
+    "fastify-autoload": "^0.7.0",
     "fastify-plugin": "^1.4.0"
   },
   "devDependencies": {
