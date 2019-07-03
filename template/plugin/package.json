@@ -39,7 +39,7 @@
   "devDependencies": {
     "fastify": "__fastify__",
     "husky": "^3.0.0",
-    "lint-staged": "^8.1.0",
+    "lint-staged": "^9.0.0",
     "prettier": "^1.15.0",
     "standard": "^12.0.0",
     "tap": "^14.0.0"
