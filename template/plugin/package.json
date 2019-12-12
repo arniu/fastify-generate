@@ -38,11 +38,11 @@
   },
   "devDependencies": {
     "fastify": "__fastify__",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "standard": "^14.3.1",
-    "tap": "^14.10.2"
+    "husky": "^3.0.0",
+    "lint-staged": "^9.0.0",
+    "prettier": "^1.15.0",
+    "standard": "^14.0.0",
+    "tap": "^14.0.0"
   },
   "engines": {
     "node": ">= 6"
