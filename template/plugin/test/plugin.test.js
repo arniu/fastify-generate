@@ -1,13 +1,14 @@
-const t = require('tap')
 const build = require('./build')
 
-t.test('The Plugin works', t => {
-  t.plan(2)
+describe('example plugin', () => {
+  const app = build()
+  afterAll(app.close)
 
-  const app = build.app(t)
+  it('it works', done => {
+    app.ready(err => {
+      expect(err).toBeFalsy()
 
-  app.ready(err => {
-    t.error(err)
-    t.pass()
+      done()
+    })
   })
 })

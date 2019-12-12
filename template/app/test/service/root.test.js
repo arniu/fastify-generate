@@ -1,30 +1,13 @@
-const t = require('tap')
 const build = require('../build')
 
-t.test('default root route', t => {
-  t.plan(2)
+describe('root', () => {
+  const app = build()
+  afterAll(app.close)
 
-  const app = build.app(t)
+  it('default / route', async () => {
+    expect.assertions(1)
 
-  app.inject(
-    {
-      url: '/'
-    },
-    (err, res) => {
-      t.error(err)
-      t.equal(res.statusCode, 200)
-    }
-  )
+    const res = await app.inject('/')
+    expect(res.statusCode).toEqual(200)
+  })
 })
-
-// If you prefer async/await, use the following
-//
-// t.test('default root route', async t => {
-//   const app = build.app(t)
-//
-//   const res = await app.inject({
-//     url: '/'
-//   })
-//
-//   t.equal(res.statusCode, 200)
-// })

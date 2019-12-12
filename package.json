@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "standard --fix",
     "prelint": "prettier --write './**/*.{js,md}'",
-    "test": "tap '{test,template}/**/*.test.js'"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -44,6 +44,12 @@
     "singleQuote": true,
     "tabWidth": 2
   },
+  "standard": {
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "decamelize": "^3.0.0",
@@ -55,10 +61,10 @@
     "fastify-autoload": "^1.0.0",
     "fastify-plugin": "^1.4.0",
     "husky": "^3.0.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.0.0",
     "prettier": "^1.16.0",
-    "standard": "^14.0.0",
-    "tap": "^14.0.0"
+    "standard": "^14.0.0"
   },
   "engines": {
     "node": ">= 6"

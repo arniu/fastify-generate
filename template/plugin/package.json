@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap 'test/**/*.test.js'",
+    "test": "jest",
     "prelint": "prettier --write './**/*.{js,md,yml}'",
     "lint": "standard --fix"
   },
@@ -33,16 +33,22 @@
     "singleQuote": true,
     "tabWidth": 2
   },
+  "standard": {
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
   "dependencies": {
     "fastify-plugin": "^1.6.0"
   },
   "devDependencies": {
     "fastify": "__fastify__",
     "husky": "^3.0.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.0.0",
     "prettier": "^1.15.0",
-    "standard": "^14.0.0",
-    "tap": "^14.0.0"
+    "standard": "^14.0.0"
   },
   "engines": {
     "node": ">= 6"

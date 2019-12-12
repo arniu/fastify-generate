@@ -1,29 +1,27 @@
-const t = require('tap')
+const normalizeName = require('../lib/normalizeName')
 
-const normalize = require('../lib/normalizeName')
+describe('normalizeName', () => {
+  it('normalize app name', () => {
+    const options = {
+      plugin: false
+    }
 
-t.test('normalize app name', t => {
-  t.plan(4)
+    expect(normalizeName('app', options)).toEqual('app')
+    expect(normalizeName('~/app', options)).toEqual('app')
+    expect(normalizeName('path/to/app', options)).toEqual('app')
+    expect(normalizeName('awesomeApp', options)).toEqual('awesome-app')
+  })
 
-  const options = {
-    plugin: false
-  }
+  it('normalize plugin name', () => {
+    const options = {
+      plugin: true
+    }
 
-  t.equal(normalize('app', options), 'app')
-  t.equal(normalize('~/app', options), 'app')
-  t.equal(normalize('path/to/app', options), 'app')
-  t.equal(normalize('awesomeApp', options), 'awesome-app')
-})
-
-t.test('normalize plugin name', t => {
-  t.plan(4)
-
-  const options = {
-    plugin: true
-  }
-
-  t.equal(normalize('plugin', options), 'fastify-plugin')
-  t.equal(normalize('~/plugin', options), 'fastify-plugin')
-  t.equal(normalize('path/to/plugin', options), 'fastify-plugin')
-  t.equal(normalize('awesomePlugin', options), 'fastify-awesome-plugin')
+    expect(normalizeName('plugin', options)).toEqual('fastify-plugin')
+    expect(normalizeName('~/plugin', options)).toEqual('fastify-plugin')
+    expect(normalizeName('path/to/plugin', options)).toEqual('fastify-plugin')
+    expect(normalizeName('awesomePlugin', options)).toEqual(
+      'fastify-awesome-plugin'
+    )
+  })
 })

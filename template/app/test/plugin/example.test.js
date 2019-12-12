@@ -1,27 +1,19 @@
-const t = require('tap')
-const build = require('../build')
-
 const example = require('../../plugin/example')
 
-t.test('it works standalone', t => {
-  t.plan(2)
+const build = require('../build')
 
-  const app = build(t)
-  app.register(example)
+describe('example plugin', () => {
+  const app = build.withNothing()
+  afterAll(app.close)
 
-  app.ready(err => {
-    t.error(err)
-    t.equal(app.example(), 42)
+  it('it works standalone', done => {
+    app.register(example)
+
+    app.ready(err => {
+      expect(err).toBeFalsy()
+      expect(app.answer()).toEqual(42)
+
+      done()
+    })
   })
 })
-
-// If you prefer async/await, use the following
-//
-// t.test('it works standalone', async t => {
-//   const app = build(t)
-//   app.register(example)
-//
-//   await app.ready()
-//
-//   t.equal(app.example(), 42)
-// })
