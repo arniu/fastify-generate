@@ -4,7 +4,7 @@ const fp = require('fastify-plugin')
 // to export the decorators to the outer scope
 
 module.exports = fp(function (fastify, opts, next) {
-  fastify.decorate('example', function () {
+  fastify.decorate('answer', function () {
     return 42
   })
 

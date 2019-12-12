@@ -1,18 +1,14 @@
 const fp = require('fastify-plugin')
 
-// Build app for unit testing
-function build (t) {
+function withNothing () {
   const app = require('fastify')()
-
-  // tear down our app after testing
-  t.tearDown(app.close.bind(app))
+  app.close = app.close.bind(app)
 
   return app
 }
 
-// Build app for integration testing
-build.app = function buildApp (t) {
-  const app = build(t)
+function build () {
+  const app = withNothing()
 
   // fastify-plugins ensures that all decorators
   // are exposed for testing purposes, this is
@@ -22,11 +18,14 @@ build.app = function buildApp (t) {
   return app
 }
 
-// Config for testing the plugin
-build.config = function config () {
+// Config for testing the application
+function config () {
   return {
     // Add config here
   }
 }
+
+build.withNothing = withNothing
+build.config = config
 
 module.exports = build

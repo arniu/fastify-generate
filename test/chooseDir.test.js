@@ -1,32 +1,33 @@
-const t = require('tap')
 const fs = require('fs')
 
 const chooseDir = require('../lib/chooseDir')
 
-t.test('choose template dir to generate an app', t => {
-  t.plan(3)
+describe('chooseDir', () => {
+  it('choose template dir to generate an app', done => {
+    const dir = chooseDir({
+      plugin: false
+    })
 
-  const dir = chooseDir({
-    plugin: false
+    expect(dir).toMatch(/app$/)
+    fs.stat(dir, (err, stat) => {
+      expect(stat.isDirectory()).toBeTruthy()
+      expect(err).toBeNull()
+
+      done()
+    })
   })
 
-  t.match(dir, /app$/)
-  fs.stat(dir, (err, stat) => {
-    t.error(err)
-    t.ok(stat.isDirectory())
-  })
-})
+  it('choose template dir to generate a plugin', done => {
+    const dir = chooseDir({
+      plugin: true
+    })
 
-t.test('choose template dir to generate a plugin', t => {
-  t.plan(3)
+    expect(dir).toMatch(/plugin$/)
+    fs.stat(dir, (err, stat) => {
+      expect(stat.isDirectory()).toBeTruthy()
+      expect(err).toBeNull()
 
-  const dir = chooseDir({
-    plugin: true
-  })
-
-  t.match(dir, /plugin$/)
-  fs.stat(dir, (err, stat) => {
-    t.error(err)
-    t.ok(stat.isDirectory())
+      done()
+    })
   })
 })

@@ -8,8 +8,8 @@
     "test": "test"
   },
   "scripts": {
+    "test": "jest",
     "start": "node bin/www",
-    "test": "tap 'test/**/*.test.js'",
     "prelint": "prettier --write './**/*.{js,md,yml}'",
     "lint": "standard --fix",
     "dev": "nodemon bin/www"
@@ -36,6 +36,12 @@
     "singleQuote": true,
     "tabWidth": 2
   },
+  "standard": {
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
   "dependencies": {
     "dotenv": "^8.0.0",
     "fastify": "__fastify__",
@@ -44,10 +50,10 @@
   },
   "devDependencies": {
     "husky": "^3.0.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.0.0",
     "pino-pretty": "^3.0.0",
     "prettier": "^1.15.0",
-    "standard": "^14.0.0",
-    "tap": "^14.0.0"
+    "standard": "^14.0.0"
   }
 }
