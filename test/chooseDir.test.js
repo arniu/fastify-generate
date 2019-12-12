@@ -22,7 +22,7 @@ describe('chooseDir', () => {
       plugin: true
     })
 
-    expect(dir).toMatch(/app$/)
+    expect(dir).toMatch(/plugin$/)
     fs.stat(dir, (err, stat) => {
       expect(stat.isDirectory()).toBeTruthy()
       expect(err).toBeNull()
