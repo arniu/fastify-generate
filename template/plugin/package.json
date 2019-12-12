@@ -34,7 +34,7 @@
     "tabWidth": 2
   },
   "dependencies": {
-    "fastify-plugin": "^1.4.0"
+    "fastify-plugin": "^1.6.0"
   },
   "devDependencies": {
     "fastify": "__fastify__",
