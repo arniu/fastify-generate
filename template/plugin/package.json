@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "fastify": "__fastify__",
-    "husky": "^3.0.0",
+    "husky": "^4.0.2",
     "jest": "^24.9.0",
     "lint-staged": "^9.0.0",
     "prettier": "^1.15.0",
