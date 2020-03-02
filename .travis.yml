@@ -5,10 +5,9 @@ os:
   - windows
 
 node_js:
-  - 'node'
-  - '12'
-  - '10'
-  - '8'
+  - node
+  - 12
+  - 10
 
 notifications:
   email:
